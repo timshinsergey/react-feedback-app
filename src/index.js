@@ -3,4 +3,9 @@ import ReactDom from 'react-dom'
 import './index.css'
 import App from './App'
 
-ReactDom.render(<App />, document.getElementById('root'))
+ReactDom.render(
+	<React.StrictMode>
+		<App />
+	</React.StrictMode>,
+	document.getElementById('root')
+)
